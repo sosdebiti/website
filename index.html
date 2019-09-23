@@ -43,35 +43,35 @@
             Ti richiamiamo entro 48 ore.</h2>
         </div>
         <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
-          <!-- Forms 6 -->
-          <section class="fdb-block">
+       <section class="fdb-block">
+            <form action="https://formspree.io/info@sosdebiti.eu" method="POST" />
             <h3>Compila ora il form per prenotare una consulenza gratuita e senza impegno da parte tua</h3>
             <div class="container">
               <div class="row justify-content-center">
                 <div class="">
                   <div class="row align-items-center">
                     <div class="col mt-4">
-                      <input type="text" class="form-control" placeholder="Nome e Cognome" required>
+                      <input type="text" name="name" class="form-control" placeholder="Nome e Cognome" required>
                     </div>
                   </div>
                   <div class="row align-items-center mt-4">
                     <div class="col">
-                      <input type="email" class="form-control" placeholder="Email" required>
+                      <input type="email" name="_replyto" class="form-control" placeholder="Email" required>
                     </div>
                   </div>
                   <div class="row align-items-center mt-4">
                     <div class="col">
-                      <input type="phone" class="form-control" placeholder="Numero di cellulare" required>
+                      <input type="phone" name="phone" class="form-control" placeholder="Numero di cellulare" required>
                     </div>
                   </div>
                   <div class="grid align-items-center mt-4">
                   <label class "input align-items-center" for"debiti" required>Hai debiti con: </label>
                                          <select id="debiti" name="creditori" required>
                                                <optgroup label="Creditori">
-                                                 <option value="banche">Debiti con Banche</option>
-                                                 <option value="fisco">Debiti con il fisco</option>
-                                                 <option value="finanziarie">Debiti con finanziarie</option>
-                                                 <option value="altri">Altri debiti</option>
+                                                 <option value="banche" name="bance">Debiti con Banche</option>
+                                                 <option value="fisco" name="fisco">Debiti con il fisco</option>
+                                                 <option value="finanziarie" name="finanziarie">Debiti con finanziarie</option>
+                                                 <option value="altri" name="altri">Altri debiti</option>
                                                </optgroup>
                                          </select>
                   </div>
@@ -79,17 +79,19 @@
                     <div class="col">
                       <div class="form-check">
                         <label class="form-check-label">
-                            <input type="checkbox" class="form-check-input" name="privacy" value="privacy" required>
+                            <input type="checkbox" name="consenso-privacy" class="form-check-input" name="privacy" value="privacy" required>
                           Autorizzo il trattamento dei miei dati personali ai sensi del Reg. UE 2016/679 per la finalità di richiesta informazioni e/o richiesta di consulenza gratuita.</a>
                           </label>
                       </div>
 
-                      <button class="btn btn-primary mt-4 btn-lg">INVIA ORA</button>
+                      <button class="btn btn-primary mt-4 btn-lg value="Send"">INVIA ORA</button>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+
+            </form>
           </section>
 
         </div>
@@ -108,7 +110,7 @@
               <i class="icon-check m-auto text-primary"></i>
             </div>
             <h3>I professionisti del sovraindebitamento</h3>
-            <p class="lead mb-0">Sos Debiti è una società presente su tutto il territorio Nazionale a cui le persone in difficoltà economica possono rivolgersi per gestire e risolvere i problemi legati alla loro situazione debitoria.</p>
+            <p class="lead mb-0">Sos Debiti è una società presente su tutto il territorio Nazionale a cui le persone in difficoltà economica possono rivolgersi per gestire e risolvere i problemi legati alla loro situazione debitoria.</p>
           </div>
         </div>
         <div class="col-lg-4">
